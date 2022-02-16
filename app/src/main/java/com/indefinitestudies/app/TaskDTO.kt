@@ -1,4 +1,7 @@
 package com.indefinitestudies.app
 
-data class TaskDTO(val id: Int? = null, val name: String, val state: TaskState) {
-}
+data class TaskDTO(
+    val id: Int? = null,
+    val name: String = "",
+    val state: TaskState = TaskState.NEW
+)
